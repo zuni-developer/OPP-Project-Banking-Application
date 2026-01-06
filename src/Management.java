@@ -32,7 +32,7 @@ public class Management extends JFrame implements ActionListener {
 
 
         mc= new Color(36,47,103);
-        ImageIcon img = new ImageIcon("background_image.jpg");
+        ImageIcon img = new ImageIcon("img/background_image.jpg");
         JLabel jb = new JLabel("img",img,JLabel.CENTER);
         jb.setBounds(0,0,1200,700);
         add(jb);
