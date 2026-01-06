@@ -208,7 +208,7 @@ public class Management extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e)  {
         try {
-            FileWriter fw = new FileWriter("filename.txt");
+            FileWriter fw = new FileWriter("data/filename.txt");
         }
         catch (IOException z){
             JOptionPane.showMessageDialog(null,"Ouch");
@@ -327,7 +327,7 @@ public class Management extends JFrame implements ActionListener {
             p++;
             z++;
             try{
-                FileWriter file=new FileWriter("Accounts.txt",true);
+                FileWriter file=new FileWriter("data/Accounts.txt",true);
                 BufferedWriter b = new BufferedWriter(file);
                 b.append("Name: ");
                 b.append(jt1.getText());
@@ -436,7 +436,7 @@ public class Management extends JFrame implements ActionListener {
         }
         else if(e.getSource()==jb10){
             try {
-                ProcessBuilder pb = new ProcessBuilder("Notepad.exe", "Accounts.txt");
+                ProcessBuilder pb = new ProcessBuilder("Notepad.exe", "data/Accounts.txt");
                 pb.start();
             }
             catch (IOException l){
